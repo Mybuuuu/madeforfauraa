@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;700&family=Nothing+You+Could+Do&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #333333;
+  --color-paper: #fdfcf0;
+  --color-burgundy: #8b0000;
+  --color-burgundy-dark: #1a0a0a;
+  --color-rose: #8b0000;
+  --color-brown: #333333;
+  --color-beige: #e5e5d1;
+
+  --font-serif: "Libre Baskerville", ui-serif, Georgia, serif;
+  --font-body: "Libre Baskerville", ui-serif, Georgia, serif;
+  --font-display: "Libre Baskerville", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-hand: "Nothing You Could Do", cursive;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-burgundy-dark);
+  color: var(--color-ink);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar for elegance */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-burgundy-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-burgundy);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-rose);
+}
+
+.bg-texture {
+  background-image: radial-gradient(var(--color-burgundy) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.2;
+}
+
+.bg-ruled {
+  background-image: linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 100% 24px;
+}
+
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+
